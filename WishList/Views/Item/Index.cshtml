@@ -1,4 +1,4 @@
-﻿@model List<WishList.Models.Item>
+@model List<WishList.Models.Item>
 
 <h1>Wishlist</h1>
 <a asp-action="Create">Add Item</a>
@@ -8,5 +8,6 @@
         <li>@item.Description<a asp-action="delete" asp-route-id="@item.Id">delete</a></li>
     }
 </ul>
+
 
 
