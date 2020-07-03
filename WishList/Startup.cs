@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WishList.Data;
+using WishList.Data;
 
 namespace WishList
 {
@@ -38,3 +39,4 @@ namespace WishList
         }
     }
 }
+
