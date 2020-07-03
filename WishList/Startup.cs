@@ -19,7 +19,7 @@ namespace WishList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<ApplicationDBContext>(options => options.UseInMemoryDatabase("WishList"));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseInMemoryDatabase("Wishlist"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -31,14 +31,10 @@ namespace WishList
             }
             else
             {
-
                 app.UseExceptionHandler("/Home/Error");
             }
-            // app.UseAuthentication();
-            // app.UseMvcWithDefaultRoute();
             app.UseRouting();
             app.UseEndpoints(endpoints => { endpoints.MapDefaultControllerRoute(); });
         }
-
     }
 }
